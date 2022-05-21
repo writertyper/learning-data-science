@@ -228,27 +228,22 @@ const thebe_selector_output = ".output, .cell_output"
             </div>
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Test GitHub Actions - Test two three four
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#importance-of-data-normalization">
    Importance of Data Normalization
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#simple-feature-scaling">
      Simple Feature Scaling
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#min-max">
      Min-Max
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#standard-deviation">
      Standard Deviation
     </a>
@@ -275,27 +270,22 @@ const thebe_selector_output = ".output, .cell_output"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Test GitHub Actions - Test two three four
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#importance-of-data-normalization">
    Importance of Data Normalization
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#simple-feature-scaling">
      Simple Feature Scaling
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#min-max">
      Min-Max
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#standard-deviation">
      Standard Deviation
     </a>
@@ -415,9 +405,8 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="test-github-actions-test-two-three-four">
 <h1>Test GitHub Actions - Test two three four<a class="headerlink" href="#test-github-actions-test-two-three-four" title="Permalink to this headline">¶</a></h1>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="importance-of-data-normalization">
-<h1>Importance of Data Normalization<a class="headerlink" href="#importance-of-data-normalization" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="importance-of-data-normalization">
+<h2>Importance of Data Normalization<a class="headerlink" href="#importance-of-data-normalization" title="Permalink to this headline">¶</a></h2>
 <p>It will be interesting to see what happens without data normalizing.</p>
 <ol class="simple">
 <li><p>Simple Feature scaling</p></li>
@@ -425,7 +414,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p>Z-score</p></li>
 </ol>
 <div class="section" id="simple-feature-scaling">
-<h2>Simple Feature Scaling<a class="headerlink" href="#simple-feature-scaling" title="Permalink to this headline">¶</a></h2>
+<h3>Simple Feature Scaling<a class="headerlink" href="#simple-feature-scaling" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;length&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;length&quot;</span><span class="p">]</span><span class="o">/</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;length&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
@@ -518,7 +507,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="section" id="min-max">
-<h2>Min-Max<a class="headerlink" href="#min-max" title="Permalink to this headline">¶</a></h2>
+<h3>Min-Max<a class="headerlink" href="#min-max" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;length&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;length&quot;</span><span class="p">]</span><span class="o">-</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;length&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">())</span><span class="o">/</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;length&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="o">-</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;length&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
@@ -611,7 +600,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="section" id="standard-deviation">
-<h2>Standard Deviation<a class="headerlink" href="#standard-deviation" title="Permalink to this headline">¶</a></h2>
+<h3>Standard Deviation<a class="headerlink" href="#standard-deviation" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;length&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;length&quot;</span><span class="p">]</span><span class="o">-</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;length&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span><span class="o">/</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;length&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
@@ -701,6 +690,7 @@ const thebe_selector_output = ".output, .cell_output"
   </tbody>
 </table>
 </div></div></div>
+</div>
 </div>
 </div>
 </div>
